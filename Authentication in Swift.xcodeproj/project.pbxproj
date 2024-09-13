@@ -84,9 +84,9 @@
 		BA6F20022C93F83F0071DF0D /* Authentication in Swift */ = {
 			isa = PBXGroup;
 			children = (
+				BADD9B332C9427DA00B4C69F /* ViewModel */,
+				BADD9B322C9427D300B4C69F /* View */,
 				BA6F20372C941E7A0071DF0D /* Model */,
-				BA6F20382C941E800071DF0D /* View */,
-				BA6F20392C941E840071DF0D /* ViewModel */,
 				BA6F20362C941E090071DF0D /* Resources */,
 				BA6F20112C93F8450071DF0D /* LaunchScreen.storyboard */,
 				BA6F20142C93F8450071DF0D /* Info.plist */,
@@ -142,20 +142,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BA6F20382C941E800071DF0D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BA6F20392C941E840071DF0D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BA6F203A2C9424930071DF0D /* Users */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +149,20 @@
 				BA6F203D2C9424C30071DF0D /* UserProperties.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		BADD9B322C9427D300B4C69F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BADD9B332C9427DA00B4C69F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
