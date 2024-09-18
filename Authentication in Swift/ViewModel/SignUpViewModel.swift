@@ -1,9 +1,9 @@
 import Foundation
 import CoreData
 import UIKit
-class DataBaseHelper {
+class SignUpViewModel {
     
-    static var sharedInstance = DataBaseHelper()
+    static var sharedInstance = SignUpViewModel()
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     func create(object : [String : String]){

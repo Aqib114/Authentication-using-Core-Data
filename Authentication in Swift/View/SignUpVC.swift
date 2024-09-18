@@ -134,14 +134,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             return
         }
         
-        if DataBaseHelper.sharedInstance.isEmailExists(email: email) {
+        if SignUpViewModel.sharedInstance.isEmailExists(email: email) {
             setLabel(emailErrorLbl, text: "User with this email already exists.", for: txtEmail)
             return
         }
         
         // Create user
         let userDict = ["name": name, "email": email, "password": password]
-        DataBaseHelper.sharedInstance.create(object: userDict)
+        SignUpViewModel.sharedInstance.create(object: userDict)
         print("User added successfully.")
     }
     
