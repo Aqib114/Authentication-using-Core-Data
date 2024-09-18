@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3119396E2C94570D0044FEB0 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119396C2C94570D0044FEB0 /* Users+CoreDataClass.swift */; };
-		3119396F2C94570D0044FEB0 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119396D2C94570D0044FEB0 /* Users+CoreDataProperties.swift */; };
-		311939712C9458F10044FEB0 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311939702C9458F10044FEB0 /* PersistenceService.swift */; };
+		31660AE12C9ABED5002CCEEB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31660AE02C9ABED5002CCEEB /* CoreDataManager.swift */; };
 		3183EB882C94413200D79861 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB862C94413200D79861 /* LoginViewController.swift */; };
 		3183EB892C94413200D79861 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3183EB872C94413200D79861 /* LoginViewController.xib */; };
 		3183EB8D2C94415900D79861 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB8B2C94415900D79861 /* HomeViewController.swift */; };
 		3183EB8E2C94415900D79861 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3183EB8C2C94415900D79861 /* HomeViewController.xib */; };
 		3183EB912C94418A00D79861 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB902C94418A00D79861 /* LoginViewModel.swift */; };
 		3183EB942C9441AD00D79861 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB932C9441AD00D79861 /* HomeViewModel.swift */; };
+		3195998F2C9AEC2100812C83 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195998D2C9AEC2100812C83 /* Users+CoreDataClass.swift */; };
+		319599902C9AEC2100812C83 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195998E2C9AEC2100812C83 /* Users+CoreDataProperties.swift */; };
+		319599922C9AED7B00812C83 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319599912C9AED7B00812C83 /* PersistenceService.swift */; };
 		BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20032C93F83F0071DF0D /* AppDelegate.swift */; };
 		BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */; };
 		BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */; };
@@ -32,20 +33,19 @@
 		BA6F20332C940B2C0071DF0D /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20282C940B2C0071DF0D /* Lato-BoldItalic.ttf */; };
 		BA6F20342C940B2C0071DF0D /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20292C940B2C0071DF0D /* Lato-Light.ttf */; };
 		BA6F20352C940B2C0071DF0D /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA6F202A2C940B2C0071DF0D /* Lato-ThinItalic.ttf */; };
-		BA6F203C2C9424A00071DF0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F203B2C9424A00071DF0D /* User.swift */; };
-		BA6F203E2C9424C30071DF0D /* UserProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F203D2C9424C30071DF0D /* UserProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3119396C2C94570D0044FEB0 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3119396D2C94570D0044FEB0 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		311939702C9458F10044FEB0 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		31660AE02C9ABED5002CCEEB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3183EB862C94413200D79861 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3183EB872C94413200D79861 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		3183EB8B2C94415900D79861 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3183EB8C2C94415900D79861 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		3183EB902C94418A00D79861 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3183EB932C9441AD00D79861 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3195998D2C9AEC2100812C83 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3195998E2C9AEC2100812C83 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		319599912C9AED7B00812C83 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		BA6F20002C93F83F0071DF0D /* Authentication in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authentication in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6F20032C93F83F0071DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +64,6 @@
 		BA6F20282C940B2C0071DF0D /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
 		BA6F20292C940B2C0071DF0D /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		BA6F202A2C940B2C0071DF0D /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
-		BA6F203B2C9424A00071DF0D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BA6F203D2C9424C30071DF0D /* UserProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +111,18 @@
 			path = HomeViewModel;
 			sourceTree = "<group>";
 		};
+		319599932C9AF12000812C83 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				31660AE02C9ABED5002CCEEB /* CoreDataManager.swift */,
+				319599912C9AED7B00812C83 /* PersistenceService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		BA6F1FF72C93F83F0071DF0D = {
 			isa = PBXGroup;
 			children = (
-				311939702C9458F10044FEB0 /* PersistenceService.swift */,
-				3119396C2C94570D0044FEB0 /* Users+CoreDataClass.swift */,
-				3119396D2C94570D0044FEB0 /* Users+CoreDataProperties.swift */,
 				BA6F20022C93F83F0071DF0D /* Authentication in Swift */,
 				BA6F20012C93F83F0071DF0D /* Products */,
 			);
@@ -135,6 +139,7 @@
 		BA6F20022C93F83F0071DF0D /* Authentication in Swift */ = {
 			isa = PBXGroup;
 			children = (
+				319599932C9AF12000812C83 /* CoreData */,
 				BADD9B332C9427DA00B4C69F /* ViewModel */,
 				BADD9B322C9427D300B4C69F /* View */,
 				BA6F20372C941E7A0071DF0D /* Model */,
@@ -194,8 +199,8 @@
 		BA6F203A2C9424930071DF0D /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				BA6F203B2C9424A00071DF0D /* User.swift */,
-				BA6F203D2C9424C30071DF0D /* UserProperties.swift */,
+				3195998E2C9AEC2100812C83 /* Users+CoreDataProperties.swift */,
+				3195998D2C9AEC2100812C83 /* Users+CoreDataClass.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -301,18 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3195998F2C9AEC2100812C83 /* Users+CoreDataClass.swift in Sources */,
 				3183EB882C94413200D79861 /* LoginViewController.swift in Sources */,
-				311939712C9458F10044FEB0 /* PersistenceService.swift in Sources */,
 				3183EB942C9441AD00D79861 /* HomeViewModel.swift in Sources */,
 				BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */,
+				319599902C9AEC2100812C83 /* Users+CoreDataProperties.swift in Sources */,
+				319599922C9AED7B00812C83 /* PersistenceService.swift in Sources */,
 				BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */,
-				BA6F203C2C9424A00071DF0D /* User.swift in Sources */,
-				3119396F2C94570D0044FEB0 /* Users+CoreDataProperties.swift in Sources */,
 				3183EB912C94418A00D79861 /* LoginViewModel.swift in Sources */,
+				31660AE12C9ABED5002CCEEB /* CoreDataManager.swift in Sources */,
 				BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */,
 				3183EB8D2C94415900D79861 /* HomeViewController.swift in Sources */,
-				3119396E2C94570D0044FEB0 /* Users+CoreDataClass.swift in Sources */,
-				BA6F203E2C9424C30071DF0D /* UserProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

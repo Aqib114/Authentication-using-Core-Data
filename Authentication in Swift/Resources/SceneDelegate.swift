@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let nav = UINavigationController()
-//        let mainView = SignUpVC.loadFromNib()
-//        nav.pushViewController(mainView, animated: true)
+        let mainView = LoginViewController.loadFromNib()
+        nav.pushViewController(mainView, animated: true)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }

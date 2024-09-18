@@ -5,7 +5,7 @@ class PersistenceService {
 
     // MARK: - Persistent Container
     static var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Authentication_in_Swift") // Replace with your .xcdatamodeld filename
+        let container = NSPersistentContainer(name: "Authentication_in_Swift") 
         container.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Failed to load Core Data stack: \(error)")
@@ -32,4 +32,3 @@ class PersistenceService {
         }
     }
 }
-
