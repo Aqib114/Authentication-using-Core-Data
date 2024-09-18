@@ -159,11 +159,27 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		BADD9B322C9427D300B4C69F /* View */ = {
+		BAAE61002C9AF17F009289D4 /* SignUp View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				BA6F201A2C9408F50071DF0D /* SignUpVC.swift */,
 				BA6F201B2C9408F50071DF0D /* SignUpVC.xib */,
+			);
+			path = "SignUp View Controller";
+			sourceTree = "<group>";
+		};
+		BAAE61012C9AF19D009289D4 /* SignUp ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BADD9B3D2C94437B00B4C69F /* SignUpViewModel.swift */,
+			);
+			path = "SignUp ViewModel";
+			sourceTree = "<group>";
+		};
+		BADD9B322C9427D300B4C69F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE61002C9AF17F009289D4 /* SignUp View Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,7 +187,7 @@
 		BADD9B332C9427DA00B4C69F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BADD9B3D2C94437B00B4C69F /* SignUpViewModel.swift */,
+				BAAE61012C9AF19D009289D4 /* SignUp ViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
