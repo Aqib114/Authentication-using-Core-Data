@@ -110,6 +110,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     // MARK: - Create User Action
     @IBAction func createdUser(_ sender: Any) {
         validateFormAndCreateUser()
+        
     }
     
     func validateFormAndCreateUser() {
@@ -143,6 +144,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let userDict = ["name": name, "email": email, "password": password]
         SignUpViewModel.sharedInstance.create(object: userDict)
         print("User added successfully.")
+        let LoginViewController = LoginViewController.loadFromNib()
+        navigationController?.pushViewController(LoginViewController, animated: true)
+        navigationController?.navigationBar.isHidden = true
+       
     }
     
     // MARK: - TextField Customization

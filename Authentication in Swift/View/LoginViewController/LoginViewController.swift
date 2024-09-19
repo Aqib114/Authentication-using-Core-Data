@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
         setupGestureRecognizers()
         setupTextFieldImages()
         setupTextFieldTargets()
+        setupDismissKeyboardGesture()
+
     }
 
     // Function to set up the layout for text fields
@@ -162,10 +164,21 @@ class LoginViewController: UIViewController {
             return nil
         }
     }
+    func setupDismissKeyboardGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
     @objc func createAccountTapped() {
-//        let signupViewController = SignUpViewController.loadFromNib()
-//        navigationController?.pushViewController(signupViewController, animated: true)
+   let signupViewController = SignUpVC.loadFromNib()
+        navigationController?.pushViewController(signupViewController, animated: true)
+        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarButton
+        navigationController?.navigationBar.tintColor = .white
     }
 
     func showAlert(message: String) {

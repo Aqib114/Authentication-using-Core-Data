@@ -33,21 +33,20 @@
                         <constraint firstAttribute="height" constant="149" id="hJv-ja-O37"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-HS-FIl">
-                    <rect key="frame" x="60" y="186" width="273" height="77"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-HS-FIl">
+                    <rect key="frame" x="40" y="186" width="313" height="77"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="64"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-12-OBa">
-                    <rect key="frame" x="168" y="290" width="56" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-12-OBa">
+                    <rect key="frame" x="150" y="290" width="93" height="21"/>
                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-Za-AUy">
-                    <rect key="frame" x="154" y="383" width="84" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-Za-AUy">
+                    <rect key="frame" x="10" y="383" width="373" height="21"/>
                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -64,16 +63,19 @@
             <constraints>
                 <constraint firstItem="i16-7a-IRa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2R4-jB-FEB"/>
                 <constraint firstAttribute="bottom" secondItem="npv-Kx-A2c" secondAttribute="bottom" id="3eT-K0-hTA"/>
+                <constraint firstItem="bTK-Za-AUy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Cag-Cj-dqz"/>
                 <constraint firstItem="i16-7a-IRa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MWh-9c-zYP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VGZ-HS-FIl" secondAttribute="trailing" constant="60" id="a4m-r2-vw7"/>
+                <constraint firstItem="bTK-Za-AUy" firstAttribute="top" secondItem="eQz-12-OBa" secondAttribute="bottom" constant="72" id="O6d-13-1HF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bTK-Za-AUy" secondAttribute="trailing" constant="10" id="VYX-Kc-Dqf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VGZ-HS-FIl" secondAttribute="trailing" constant="40" id="a4m-r2-vw7"/>
                 <constraint firstItem="eQz-12-OBa" firstAttribute="top" secondItem="VGZ-HS-FIl" secondAttribute="bottom" constant="27" id="dsm-M5-GMB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="npv-Kx-A2c" secondAttribute="trailing" constant="261" id="dyE-iC-zFs"/>
                 <constraint firstItem="VGZ-HS-FIl" firstAttribute="top" secondItem="i16-7a-IRa" secondAttribute="bottom" constant="37" id="jXj-ta-zxY"/>
-                <constraint firstItem="VGZ-HS-FIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="sa1-5X-U3l"/>
+                <constraint firstItem="VGZ-HS-FIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="sa1-5X-U3l"/>
                 <constraint firstAttribute="trailing" secondItem="i16-7a-IRa" secondAttribute="trailing" constant="-13" id="vk2-ls-R1c"/>
                 <constraint firstItem="npv-Kx-A2c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-19" id="xdh-k1-ypR"/>
-                <constraint firstItem="eQz-12-OBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="168" id="y3M-hn-PEf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eQz-12-OBa" secondAttribute="trailing" constant="169" id="z8J-26-ZzB"/>
+                <constraint firstItem="eQz-12-OBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="y3M-hn-PEf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eQz-12-OBa" secondAttribute="trailing" constant="150" id="z8J-26-ZzB"/>
             </constraints>
             <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>
         </view>
