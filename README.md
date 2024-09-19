@@ -3,13 +3,13 @@ This iOS app demonstrates a simple user authentication flow using **CoreData** f
 
 ## Screenshots
 ### Signup Screen
-![Signup Screen](signup.png)
+![Signup Screen](https://github.com/Aqib114/Authentication-using-Core-Data/blob/main/signup.PNG)
 
 ### Login Screen
-![Login Screen](login.png)
+![Login Screen](https://github.com/Aqib114/Authentication-using-Core-Data/blob/main/login.PNG)
 
 ### Home Screen
-![Home Screen](home.png)
+![Home Screen](https://github.com/Aqib114/Authentication-using-Core-Data/blob/main/home.PNG)
 
 ## Features
 **1. User Sign-Up:**
