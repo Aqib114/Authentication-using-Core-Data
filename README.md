@@ -1,6 +1,16 @@
 # Authentication-using-Core-Data
 This iOS app demonstrates a simple user authentication flow using **CoreData** for storing and fetching user data. The app consists of three main screens: **SignUp, Login, and Home.**
 
+## Screenshots
+### Signup Screen
+![Signup Screen](signup.png)
+
+### Login Screen
+![Login Screen](login.png)
+
+### Home Screen
+![Home Screen](home.png)
+
 ## Features
 **1. User Sign-Up:**
 - The user creates an account by entering their **name, email, password, and confirm password**.
