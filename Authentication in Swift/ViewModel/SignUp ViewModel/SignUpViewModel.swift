@@ -6,11 +6,12 @@ class SignUpViewModel {
     static var sharedInstance = SignUpViewModel()
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
-    func create(object : [String : String]){
+    func create(object : [String : Any]){
         let Users = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context!) as! Users
-        Users.name = object["name"]
-        Users.email = object["email"]
-        Users.password = object["password"]
+        Users.name = object["name"] as? String
+        Users.email = object["email"] as? String
+        Users.password = object["password"] as? String
+        Users.city = object["city"] as? String
         
         
         do{
