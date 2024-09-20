@@ -18,7 +18,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Authentication_in_Swift" customModuleProvider="target">
             <connections>
-                <outlet property="userNameLabel" destination="bTK-Za-AUy" id="FwO-K0-Och"/>
+                <outlet property="userCityLabel" destination="KnD-vF-l2w" id="0q5-zZ-P7I"/>
+                <outlet property="userEmailLabel" destination="stj-Ny-GT4" id="RxB-4n-1sH"/>
+                <outlet property="userImageView" destination="X6C-G1-Q4M" id="TZX-ni-YEJ"/>
+                <outlet property="userNameLabel" destination="Lmy-NF-5Rq" id="0Yq-wj-cc6"/>
+                <outlet property="userProfileImageView" destination="X6C-G1-Q4M" id="rJp-Cq-EMF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,9 +32,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="i16-7a-IRa">
-                    <rect key="frame" x="0.0" y="0.0" width="406" height="149"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="149" id="hJv-ja-O37"/>
+                        <constraint firstAttribute="height" constant="133" id="yk3-78-h0e"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-HS-FIl">
@@ -39,41 +43,98 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-12-OBa">
-                    <rect key="frame" x="168" y="290" width="56" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-12-OBa">
+                    <rect key="frame" x="150" y="290" width="93" height="21.666666666666686"/>
                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-Za-AUy">
-                    <rect key="frame" x="154" y="383" width="84" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6C-G1-Q4M">
+                    <rect key="frame" x="108" y="349.66666666666669" width="177" height="89.333333333333314"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="o7T-G3-3BN">
+                    <rect key="frame" x="140" y="474" width="113" height="160"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="za7-dO-Y4W">
+                            <rect key="frame" x="0.0" y="0.0" width="113" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-Za-AUy">
+                                    <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmy-NF-5Rq">
+                                    <rect key="frame" x="68.333333333333343" y="0.0" width="44.666666666666657" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-0n-Mdf">
+                            <rect key="frame" x="0.0" y="68" width="105.33333333333333" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7v-JJ-GHT">
+                                    <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stj-Ny-GT4">
+                                    <rect key="frame" x="64.666666666666657" y="0.0" width="40.666666666666657" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ol3-BY-aKs">
+                            <rect key="frame" x="0.0" y="136" width="83.666666666666671" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81Y-kI-yqh">
+                                    <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnD-vF-l2w">
+                                    <rect key="frame" x="52.33333333333335" y="0.0" width="31.333333333333336" height="24"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 4" translatesAutoresizingMaskIntoConstraints="NO" id="npv-Kx-A2c">
-                    <rect key="frame" x="-19" y="520" width="151" height="332"/>
+                    <rect key="frame" x="0.0" y="554" width="94" height="332"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="332" id="lRK-U6-dLX"/>
+                        <constraint firstAttribute="height" constant="332" id="tJC-iA-9Hw"/>
                     </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="i16-7a-IRa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2R4-jB-FEB"/>
-                <constraint firstAttribute="bottom" secondItem="npv-Kx-A2c" secondAttribute="bottom" id="3eT-K0-hTA"/>
-                <constraint firstItem="i16-7a-IRa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MWh-9c-zYP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VGZ-HS-FIl" secondAttribute="trailing" constant="60" id="a4m-r2-vw7"/>
-                <constraint firstItem="eQz-12-OBa" firstAttribute="top" secondItem="VGZ-HS-FIl" secondAttribute="bottom" constant="27" id="dsm-M5-GMB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="npv-Kx-A2c" secondAttribute="trailing" constant="261" id="dyE-iC-zFs"/>
-                <constraint firstItem="VGZ-HS-FIl" firstAttribute="top" secondItem="i16-7a-IRa" secondAttribute="bottom" constant="37" id="jXj-ta-zxY"/>
-                <constraint firstItem="VGZ-HS-FIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="sa1-5X-U3l"/>
-                <constraint firstAttribute="trailing" secondItem="i16-7a-IRa" secondAttribute="trailing" constant="-13" id="vk2-ls-R1c"/>
-                <constraint firstItem="npv-Kx-A2c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-19" id="xdh-k1-ypR"/>
-                <constraint firstItem="eQz-12-OBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="168" id="y3M-hn-PEf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eQz-12-OBa" secondAttribute="trailing" constant="169" id="z8J-26-ZzB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X6C-G1-Q4M" secondAttribute="trailing" constant="108" id="3uX-XY-joB"/>
+                <constraint firstItem="eQz-12-OBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="BES-GM-dMc"/>
+                <constraint firstItem="i16-7a-IRa" firstAttribute="leading" secondItem="npv-Kx-A2c" secondAttribute="leading" id="BTo-Gc-uZR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VGZ-HS-FIl" secondAttribute="trailing" constant="40" id="Ht7-fv-EbB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o7T-G3-3BN" secondAttribute="bottom" constant="184" id="Izd-L8-C5E"/>
+                <constraint firstItem="eQz-12-OBa" firstAttribute="top" secondItem="VGZ-HS-FIl" secondAttribute="bottom" constant="27" id="Nzi-o1-Ofi"/>
+                <constraint firstAttribute="bottom" secondItem="npv-Kx-A2c" secondAttribute="bottom" constant="-34" id="O0n-NV-ln7"/>
+                <constraint firstItem="X6C-G1-Q4M" firstAttribute="top" secondItem="eQz-12-OBa" secondAttribute="bottom" constant="38" id="Qwm-hR-5kf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o7T-G3-3BN" secondAttribute="trailing" constant="140" id="Sxc-GW-IZg"/>
+                <constraint firstAttribute="trailing" secondItem="i16-7a-IRa" secondAttribute="trailing" id="XLE-WL-VWL"/>
+                <constraint firstItem="o7T-G3-3BN" firstAttribute="top" secondItem="X6C-G1-Q4M" secondAttribute="bottom" constant="35" id="c6F-rR-dRG"/>
+                <constraint firstItem="VGZ-HS-FIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="fAB-Hw-9cZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eQz-12-OBa" secondAttribute="trailing" constant="150" id="j6u-jw-DeA"/>
+                <constraint firstItem="npv-Kx-A2c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pVJ-4O-i8m"/>
+                <constraint firstItem="VGZ-HS-FIl" firstAttribute="top" secondItem="i16-7a-IRa" secondAttribute="bottom" constant="53" id="qEZ-g7-h39"/>
+                <constraint firstItem="i16-7a-IRa" firstAttribute="centerX" secondItem="X6C-G1-Q4M" secondAttribute="centerX" id="t4o-iD-3QN"/>
+                <constraint firstItem="i16-7a-IRa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wib-rN-5bo"/>
             </constraints>
             <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>
         </view>

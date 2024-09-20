@@ -7,19 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31660AE12C9ABED5002CCEEB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31660AE02C9ABED5002CCEEB /* CoreDataManager.swift */; };
-		3183EB882C94413200D79861 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB862C94413200D79861 /* LoginViewController.swift */; };
-		3183EB892C94413200D79861 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3183EB872C94413200D79861 /* LoginViewController.xib */; };
-		3183EB8D2C94415900D79861 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB8B2C94415900D79861 /* HomeViewController.swift */; };
-		3183EB8E2C94415900D79861 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3183EB8C2C94415900D79861 /* HomeViewController.xib */; };
-		3183EB912C94418A00D79861 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB902C94418A00D79861 /* LoginViewModel.swift */; };
-		3183EB942C9441AD00D79861 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183EB932C9441AD00D79861 /* HomeViewModel.swift */; };
-		3195998F2C9AEC2100812C83 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195998D2C9AEC2100812C83 /* Users+CoreDataClass.swift */; };
-		319599902C9AEC2100812C83 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195998E2C9AEC2100812C83 /* Users+CoreDataProperties.swift */; };
-		319599922C9AED7B00812C83 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319599912C9AED7B00812C83 /* PersistenceService.swift */; };
+		31BCB48F2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */; };
 		BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20032C93F83F0071DF0D /* AppDelegate.swift */; };
 		BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */; };
-		BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */; };
 		BA6F20102C93F8450071DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6F200F2C93F8450071DF0D /* Assets.xcassets */; };
 		BA6F20132C93F8450071DF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20112C93F8450071DF0D /* LaunchScreen.storyboard */; };
 		BA6F202B2C940B2C0071DF0D /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20202C940B2C0071DF0D /* Lato-Italic.ttf */; };
@@ -36,20 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31660AE02C9ABED5002CCEEB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		3183EB862C94413200D79861 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3183EB872C94413200D79861 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		3183EB8B2C94415900D79861 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3183EB8C2C94415900D79861 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		3183EB902C94418A00D79861 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3183EB932C9441AD00D79861 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		3195998D2C9AEC2100812C83 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3195998E2C9AEC2100812C83 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		319599912C9AED7B00812C83 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Authentication_in_Swift.xcdatamodel; sourceTree = "<group>"; };
 		BA6F20002C93F83F0071DF0D /* Authentication in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authentication in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6F20032C93F83F0071DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Authentication_in_Swift.xcdatamodel; sourceTree = "<group>"; };
 		BA6F200F2C93F8450071DF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6F20122C93F8450071DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6F20142C93F8450071DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +103,7 @@
 		BA6F1FF72C93F83F0071DF0D = {
 			isa = PBXGroup;
 			children = (
+				31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */,
 				BA6F20022C93F83F0071DF0D /* Authentication in Swift */,
 				BA6F20012C93F83F0071DF0D /* Products */,
 			);
@@ -146,7 +127,6 @@
 				BA6F20362C941E090071DF0D /* Resources */,
 				BA6F20112C93F8450071DF0D /* LaunchScreen.storyboard */,
 				BA6F20142C93F8450071DF0D /* Info.plist */,
-				BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */,
 			);
 			path = "Authentication in Swift";
 			sourceTree = "<group>";
@@ -310,11 +290,15 @@
 				3183EB882C94413200D79861 /* LoginViewController.swift in Sources */,
 				3183EB942C9441AD00D79861 /* HomeViewModel.swift in Sources */,
 				BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */,
-				319599902C9AEC2100812C83 /* Users+CoreDataProperties.swift in Sources */,
-				319599922C9AED7B00812C83 /* PersistenceService.swift in Sources */,
-				BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */,
-				3183EB912C94418A00D79861 /* LoginViewModel.swift in Sources */,
-				31660AE12C9ABED5002CCEEB /* CoreDataManager.swift in Sources */,
+				BADD9B382C94418D00B4C69F /* Users+CoreDataClass.swift in Sources */,
+				BAFF13822C9BE0EB008D838B /* LoginViewController.swift in Sources */,
+				BAFF13862C9BE111008D838B /* PersistenceService.swift in Sources */,
+				BADD9B3E2C94437B00B4C69F /* SignUpViewModel.swift in Sources */,
+				BAFF13902C9BE12D008D838B /* HomeViewModel.swift in Sources */,
+				BAFF13912C9BE12D008D838B /* LoginViewModel.swift in Sources */,
+				BAFF138B2C9BE11F008D838B /* HomeViewController.swift in Sources */,
+				31BCB48F2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld in Sources */,
+				BAFF13852C9BE111008D838B /* CoreDataManager.swift in Sources */,
 				BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */,
 				3183EB8D2C94415900D79861 /* HomeViewController.swift in Sources */,
 			);
@@ -531,13 +515,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */ = {
+		31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */,
+				31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */,
 			);
-			currentVersion = BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */;
-			path = Authentication_in_Swift.xcdatamodeld;
+			currentVersion = 31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */;
+			name = Authentication_in_Swift.xcdatamodeld;
+			path = "Authentication in Swift/Authentication_in_Swift.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
