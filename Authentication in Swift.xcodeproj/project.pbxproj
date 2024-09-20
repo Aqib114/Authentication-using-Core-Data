@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20032C93F83F0071DF0D /* AppDelegate.swift */; };
 		BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */; };
-		BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */; };
 		BA6F20102C93F8450071DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6F200F2C93F8450071DF0D /* Assets.xcassets */; };
 		BA6F20132C93F8450071DF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20112C93F8450071DF0D /* LaunchScreen.storyboard */; };
 		BA6F202B2C940B2C0071DF0D /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA6F20202C940B2C0071DF0D /* Lato-Italic.ttf */; };
@@ -42,7 +41,6 @@
 		BA6F20002C93F83F0071DF0D /* Authentication in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authentication in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6F20032C93F83F0071DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Authentication_in_Swift.xcdatamodel; sourceTree = "<group>"; };
 		BA6F200F2C93F8450071DF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6F20122C93F8450071DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6F20142C93F8450071DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +84,7 @@
 		BA6F1FF72C93F83F0071DF0D = {
 			isa = PBXGroup;
 			children = (
+				31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */,
 				BA6F20022C93F83F0071DF0D /* Authentication in Swift */,
 				BA6F20012C93F83F0071DF0D /* Products */,
 			);
@@ -109,7 +108,6 @@
 				BA6F20362C941E090071DF0D /* Resources */,
 				BA6F20112C93F8450071DF0D /* LaunchScreen.storyboard */,
 				BA6F20142C93F8450071DF0D /* Info.plist */,
-				BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */,
 			);
 			path = "Authentication in Swift";
 			sourceTree = "<group>";
@@ -559,13 +557,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA6F200C2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld */ = {
+		31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */,
+				31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */,
 			);
-			currentVersion = BA6F200D2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodel */;
-			path = Authentication_in_Swift.xcdatamodeld;
+			currentVersion = 31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */;
+			name = Authentication_in_Swift.xcdatamodeld;
+			path = "Authentication in Swift/Authentication_in_Swift.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -11,7 +11,7 @@ extension Users {
     @NSManaged public var email: String?
     @NSManaged public var name: String?
     @NSManaged public var password: String?
-
+    @NSManaged public var profileImage: Data?
 }
 
 extension Users : Identifiable {

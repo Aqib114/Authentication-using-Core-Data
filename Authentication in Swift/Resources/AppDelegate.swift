@@ -9,6 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print("Document directory : ",FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found")
         // Override point for customization after application launch.
+                
         return true
     }
 

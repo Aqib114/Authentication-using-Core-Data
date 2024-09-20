@@ -21,6 +21,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         setupUI()
         setupDelegates()
         setupDismissKeyboardGesture()
+        
     }
     
     // MARK: - UI Setup

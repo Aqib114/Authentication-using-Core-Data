@@ -131,9 +131,15 @@ class LoginViewController: UIViewController {
             if let savedUser = fetchUserFromCoreData(email: email) {
                 if savedUser.password == password {
                     
-                    let userName = savedUser.name ?? "Users"
                     let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                    homeScreenController.userName = userName
+                    homeScreenController.userName = savedUser.name ?? "User"
+//                    homeScreenController.userCity = savedUser.city ?? "Unknown City"
+                    homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
+                    
+                    // Fetch and pass the profile image
+                    if let imageData = savedUser.profileImage { 
+                        homeScreenController.userImage = UIImage(data: imageData)
+                    }
                     
                     let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
                     navigationItem.backBarButtonItem = backBarButton
@@ -164,6 +170,7 @@ class LoginViewController: UIViewController {
             return nil
         }
     }
+    
     func setupDismissKeyboardGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
