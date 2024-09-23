@@ -18,8 +18,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     @IBOutlet weak var emailErrorLbl: UILabel!
     @IBOutlet weak var nameErrorLbl: UILabel!
     
-//    // Access the persistent container
-//    let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
     
     static func loadFromNib() -> SignUpVC {
         return SignUpVC(nibName: "SignUpVC", bundle: nil)

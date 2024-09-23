@@ -127,31 +127,6 @@ class LoginViewController: UIViewController {
             return
         }
 
-//        if isValidEmail(email) && isValidPassword(password) {
-//            if let savedUser = fetchUserFromCoreData(email: email) {
-//                if savedUser.password == password {
-//                    
-//                    let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-//                    homeScreenController.userName = savedUser.name ?? "User"
-//                    homeScreenController.userCity = savedUser.city ?? "Unknown City"
-//                    homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
-//                    
-//                    // Directly access the profile image from the existing savedUser object
-//                    if let imageData = savedUser.profileimage {
-//                        print("Image data found, size: \(imageData.count) bytes")
-//                        
-//                        // Convert the image data to UIImage
-//                        if let image = UIImage.fromBase64(imageData) {
-////                             UIImage(data: imageData) {
-//                            print("Image successfully created from data.")
-//                            homeScreenController.userImage = image
-//                        } else {
-//                            print("Failed to create image from data.")
-//                        }
-//                    } else {
-//                        print("No image data found.")
-//                        homeScreenController.userImage = UIImage(systemName: "pencil") // Use a placeholder if no image is available
-//                    }
         if isValidEmail(email) && isValidPassword(password) {
                 // Check if user exists in Core Data
                 if let savedUser = fetchUserFromCoreData(email: email) {

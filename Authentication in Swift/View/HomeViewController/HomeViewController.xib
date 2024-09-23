@@ -32,25 +32,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="i16-7a-IRa">
-                    <rect key="frame" x="0.0" y="0.0" width="390" height="133"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="133" id="yu5-FH-DAb"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-HS-FIl">
-                    <rect key="frame" x="40" y="186" width="310" height="77"/>
+                    <rect key="frame" x="40" y="186" width="313" height="77"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="64"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-12-OBa">
-                    <rect key="frame" x="150" y="290" width="90" height="21.666666666666686"/>
+                    <rect key="frame" x="150" y="290" width="93" height="21.666666666666686"/>
                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6C-G1-Q4M">
-                    <rect key="frame" x="156" y="354" width="78" height="80"/>
+                    <rect key="frame" x="156" y="354" width="81" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="PxF-Lu-VZF"/>
                         <constraint firstAttribute="height" constant="80" id="rgG-57-eFo"/>
@@ -118,10 +118,10 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XR6-2O-z9a">
-                    <rect key="frame" x="79.999999999999986" y="683" width="229.66666666666663" height="34.333333333333371"/>
+                    <rect key="frame" x="79.999999999999986" y="683" width="232.66666666666663" height="34.333333333333371"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp5-Vg-Mky">
-                            <rect key="frame" x="0.0" y="0.0" width="95" height="34.333333333333336"/>
+                            <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="34.333333333333336"/>
                             <color key="backgroundColor" red="0.64313725490196072" green="0.30196078431372547" blue="0.6470588235294118" alpha="0.81963878909483656" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                             <color key="tintColor" red="0.17636564590000001" green="0.17636564590000001" blue="0.17636564590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -132,9 +132,12 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="8x8-hQ-Aov"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-5l-hZS">
-                            <rect key="frame" x="135" y="0.0" width="94.666666666666686" height="34.333333333333336"/>
+                            <rect key="frame" x="136.33333333333334" y="0.0" width="96.333333333333343" height="34.333333333333336"/>
                             <color key="backgroundColor" red="0.64313725490196072" green="0.30196078431372547" blue="0.6470588235294118" alpha="0.81963878909483656" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                             <color key="tintColor" red="0.17636564590000001" green="0.17636564590000001" blue="0.17636564590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -145,6 +148,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="03Y-hF-qYT"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
