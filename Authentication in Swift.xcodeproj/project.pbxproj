@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77D4BFB1C0F18AF27A2E4B91 /* Pods_Authentication_in_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642CAAF9D347814D434AEE95 /* Pods_Authentication_in_Swift.framework */; };
+		3149CF062C9D9E16009A5107 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */; };
+		31749A9C2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31749A9A2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld */; };
 		BA6F20042C93F83F0071DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20032C93F83F0071DF0D /* AppDelegate.swift */; };
 		BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */; };
 		BA6F20102C93F8450071DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6F200F2C93F8450071DF0D /* Assets.xcassets */; };
@@ -36,11 +37,15 @@
 		BAFF138B2C9BE11F008D838B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF13892C9BE11F008D838B /* HomeViewController.swift */; };
 		BAFF13902C9BE12D008D838B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF138D2C9BE12D008D838B /* HomeViewModel.swift */; };
 		BAFF13912C9BE12D008D838B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF138F2C9BE12D008D838B /* LoginViewModel.swift */; };
+		EE42287A9C508BE55BCB01AB /* Pods_Authentication_in_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC1F9F39FAF309FE848A19A /* Pods_Authentication_in_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		642CAAF9D347814D434AEE95 /* Pods_Authentication_in_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authentication_in_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7E7303EA9F3488FE6AF0768 /* Pods-Authentication in Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication in Swift.debug.xcconfig"; path = "Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		0F2523484A27849F3F86738E /* Pods-Authentication in Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication in Swift.release.xcconfig"; path = "Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift.release.xcconfig"; sourceTree = "<group>"; };
+		3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		31749A9B2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Authentication_in_Swift.xcdatamodel; sourceTree = "<group>"; };
+		6CC1F9F39FAF309FE848A19A /* Pods_Authentication_in_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authentication_in_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DBAA1A5801631FCF24D7DDD /* Pods-Authentication in Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication in Swift.debug.xcconfig"; path = "Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6F20002C93F83F0071DF0D /* Authentication in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authentication in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6F20032C93F83F0071DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6F20052C93F83F0071DF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 		BAFF13892C9BE11F008D838B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BAFF138D2C9BE12D008D838B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BAFF138F2C9BE12D008D838B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		F8CFF1DE71DB9A623707549D /* Pods-Authentication in Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication in Swift.release.xcconfig"; path = "Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +83,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D4BFB1C0F18AF27A2E4B91 /* Pods_Authentication_in_Swift.framework in Frameworks */,
+				EE42287A9C508BE55BCB01AB /* Pods_Authentication_in_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1187FBDB6934F8D18160EF8D /* Frameworks */ = {
+		3149CF042C9D9DFB009A5107 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				642CAAF9D347814D434AEE95 /* Pods_Authentication_in_Swift.framework */,
+				3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6DF59E1A1A7058AFE3B1BE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1F9F39FAF309FE848A19A /* Pods_Authentication_in_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,11 +109,12 @@
 		BA6F1FF72C93F83F0071DF0D = {
 			isa = PBXGroup;
 			children = (
-				31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */,
+				31749A9A2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld */,
+				3149CF042C9D9DFB009A5107 /* Extensions */,
 				BA6F20022C93F83F0071DF0D /* Authentication in Swift */,
 				BA6F20012C93F83F0071DF0D /* Products */,
 				FAFBF59B99AF275CCD66950D /* Pods */,
-				1187FBDB6934F8D18160EF8D /* Frameworks */,
+				B6DF59E1A1A7058AFE3B1BE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,8 +277,8 @@
 		FAFBF59B99AF275CCD66950D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B7E7303EA9F3488FE6AF0768 /* Pods-Authentication in Swift.debug.xcconfig */,
-				F8CFF1DE71DB9A623707549D /* Pods-Authentication in Swift.release.xcconfig */,
+				8DBAA1A5801631FCF24D7DDD /* Pods-Authentication in Swift.debug.xcconfig */,
+				0F2523484A27849F3F86738E /* Pods-Authentication in Swift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -277,11 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6F20172C93F8460071DF0D /* Build configuration list for PBXNativeTarget "Authentication in Swift" */;
 			buildPhases = (
-				285EBC2B33E153DA7EB561E3 /* [CP] Check Pods Manifest.lock */,
+				7A638E5F5A3706582A69916D /* [CP] Check Pods Manifest.lock */,
 				BA6F1FFC2C93F83F0071DF0D /* Sources */,
 				BA6F1FFD2C93F83F0071DF0D /* Frameworks */,
 				BA6F1FFE2C93F83F0071DF0D /* Resources */,
-				FF3BA0BBC6E7FF89FB8DE78C /* [CP] Embed Pods Frameworks */,
+				08E7C92B36BECFE3A6BAC037 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,7 +365,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		285EBC2B33E153DA7EB561E3 /* [CP] Check Pods Manifest.lock */ = {
+		08E7C92B36BECFE3A6BAC037 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A638E5F5A3706582A69916D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,23 +404,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF3BA0BBC6E7FF89FB8DE78C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -405,11 +418,12 @@
 				BAFF13822C9BE0EB008D838B /* LoginViewController.swift in Sources */,
 				BAFF13862C9BE111008D838B /* PersistenceService.swift in Sources */,
 				BADD9B3E2C94437B00B4C69F /* SignUpViewModel.swift in Sources */,
+				3149CF062C9D9E16009A5107 /* UIImage+Ext.swift in Sources */,
 				BAFF13902C9BE12D008D838B /* HomeViewModel.swift in Sources */,
 				BAFF13912C9BE12D008D838B /* LoginViewModel.swift in Sources */,
 				BAFF138B2C9BE11F008D838B /* HomeViewController.swift in Sources */,
+				31749A9C2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld in Sources */,
 				BAFF13852C9BE111008D838B /* CoreDataManager.swift in Sources */,
-				BA6F200E2C93F83F0071DF0D /* Authentication_in_Swift.xcdatamodeld in Sources */,
 				BA6F20062C93F83F0071DF0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,7 +563,7 @@
 		};
 		BA6F20182C93F8460071DF0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E7303EA9F3488FE6AF0768 /* Pods-Authentication in Swift.debug.xcconfig */;
+			baseConfigurationReference = 8DBAA1A5801631FCF24D7DDD /* Pods-Authentication in Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -563,6 +577,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,7 +593,7 @@
 		};
 		BA6F20192C93F8460071DF0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8CFF1DE71DB9A623707549D /* Pods-Authentication in Swift.release.xcconfig */;
+			baseConfigurationReference = 0F2523484A27849F3F86738E /* Pods-Authentication in Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -592,6 +607,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,12 +645,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		31BCB48D2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodeld */ = {
+		31749A9A2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */,
+				31749A9B2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodel */,
 			);
-			currentVersion = 31BCB48E2C9C41D300D2DB68 /* Authentication_in_Swift.xcdatamodel */;
+			currentVersion = 31749A9B2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodel */;
 			name = Authentication_in_Swift.xcdatamodeld;
 			path = "Authentication in Swift/Authentication_in_Swift.xcdatamodeld";
 			sourceTree = "<group>";

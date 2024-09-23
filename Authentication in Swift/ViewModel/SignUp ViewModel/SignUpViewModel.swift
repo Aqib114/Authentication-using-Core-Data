@@ -12,6 +12,7 @@ class SignUpViewModel {
         Users.email = object["email"] as? String
         Users.password = object["password"] as? String
         Users.city = object["city"] as? String
+        Users.profileimage = object["imageData"] as? Data
         
         
         do{

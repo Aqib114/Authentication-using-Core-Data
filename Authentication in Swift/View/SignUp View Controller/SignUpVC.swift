@@ -1,3 +1,4 @@
+import CoreData
 import UIKit
 import DropDown
 
@@ -16,6 +17,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     @IBOutlet weak var passErrorLbl: UILabel!
     @IBOutlet weak var emailErrorLbl: UILabel!
     @IBOutlet weak var nameErrorLbl: UILabel!
+    
+//    // Access the persistent container
+//    let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
     
     static func loadFromNib() -> SignUpVC {
         return SignUpVC(nibName: "SignUpVC", bundle: nil)
@@ -190,13 +194,17 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.originalImage] as? UIImage {
+            
+            print("Selected image: \(selectedImage)")
 //            imagesArray.append(selectedImage)
             profileImage.image = selectedImage
-            
-            
-        }
+        } else {
+                print("No image selected")
+            }
+        
         picker.dismiss(animated: true, completion: nil)
        
         btnUpload.setTitle("Image Uploaded", for: .normal)
@@ -204,10 +212,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
         
             
     }
-//    func setRounded() {
-//        self.view.layer.cornerRadius = (view.frame.width / 2) //instead of let radius = CGRectGetWidth(self.frame) / 2
-//        self.view.layer.masksToBounds = true
-//        }
+    func setRounded() {
+        self.view.layer.cornerRadius = (view.frame.width / 2) //instead of let radius = CGRectGetWidth(self.frame) / 2
+        self.view.layer.masksToBounds = true
+        }
     
     @objc func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
@@ -243,7 +251,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             return
         }
         
-        let imageData = profileimage.pngData() ?? Data()
+        let imageData = UIImage(named: "profile")?.pngData() ?? Data()
+        
         // Create user
         let userDict = ["name": name, "email": email, "password": password, "profileimage": imageData, "city": city] as [String : Any]
         SignUpViewModel.sharedInstance.create(object: userDict)

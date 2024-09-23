@@ -127,20 +127,60 @@ class LoginViewController: UIViewController {
             return
         }
 
-        if isValidEmail(email) && isValidPassword(password) {
-            if let savedUser = fetchUserFromCoreData(email: email) {
-                if savedUser.password == password {
-                    
-                    let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                    homeScreenController.userName = savedUser.name ?? "User"
+//        if isValidEmail(email) && isValidPassword(password) {
+//            if let savedUser = fetchUserFromCoreData(email: email) {
+//                if savedUser.password == password {
+//                    
+//                    let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+//                    homeScreenController.userName = savedUser.name ?? "User"
 //                    homeScreenController.userCity = savedUser.city ?? "Unknown City"
-                    homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
-                    
-                    // Fetch and pass the profile image
-                    if let imageData = savedUser.profileImage { 
-                        homeScreenController.userImage = UIImage(data: imageData)
-                    }
-                    
+//                    homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
+//                    
+//                    // Directly access the profile image from the existing savedUser object
+//                    if let imageData = savedUser.profileimage {
+//                        print("Image data found, size: \(imageData.count) bytes")
+//                        
+//                        // Convert the image data to UIImage
+//                        if let image = UIImage.fromBase64(imageData) {
+////                             UIImage(data: imageData) {
+//                            print("Image successfully created from data.")
+//                            homeScreenController.userImage = image
+//                        } else {
+//                            print("Failed to create image from data.")
+//                        }
+//                    } else {
+//                        print("No image data found.")
+//                        homeScreenController.userImage = UIImage(systemName: "pencil") // Use a placeholder if no image is available
+//                    }
+        if isValidEmail(email) && isValidPassword(password) {
+                // Check if user exists in Core Data
+                if let savedUser = fetchUserFromCoreData(email: email) {
+                    // Validate the password
+                    if savedUser.password == password {
+                        print("User found: \(savedUser)")
+                        
+                        // Initialize the HomeViewController
+                        let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+                        homeScreenController.userName = savedUser.name ?? "User"
+                        homeScreenController.userCity = savedUser.city ?? "Unknown City"
+                        homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
+
+                        // Fetch the profile image, if available
+                        if let imageData = savedUser.profileimage {
+                            print("Image data found, size: \(imageData.count) bytes")
+                            
+                            // Attempt to create an image from the data
+                            if let image = UIImage(data: imageData) {
+                                print("Image successfully created from data.")
+                                homeScreenController.userImage = image
+                            } else {
+                                print("Failed to create image from data.")
+                            }
+                        } else {
+                            print("No image data found.")
+                            homeScreenController.userImage = UIImage(systemName: "pencil") // Use a placeholder if no image is available
+                        }
+
                     let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
                     navigationItem.backBarButtonItem = backBarButton
                     navigationController?.navigationBar.tintColor = .black
@@ -155,7 +195,6 @@ class LoginViewController: UIViewController {
             showAlert(message: "Invalid email or password")
         }
     }
-
 
     func fetchUserFromCoreData(email: String) -> Users? {
         let context = PersistenceService.context
