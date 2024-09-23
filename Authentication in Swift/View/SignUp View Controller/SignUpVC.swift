@@ -251,10 +251,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
             return
         }
         
-        let imageData = UIImage(named: "profile")?.pngData() ?? Data()
+        let imageData = profileimage.pngData() ?? Data()
         
         // Create user
-        let userDict = ["name": name, "email": email, "password": password, "profileimage": imageData, "city": city] as [String : Any]
+        let userDict = ["name": name, "email": email, "password": password, "imageData": imageData, "city": city] as [String : Any]
         SignUpViewModel.sharedInstance.create(object: userDict)
         print("User added successfully.")
         let LoginViewController = LoginViewController.loadFromNib()
