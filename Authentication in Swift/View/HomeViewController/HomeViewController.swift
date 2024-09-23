@@ -81,11 +81,19 @@ class HomeViewController: UIViewController {
         let alertController = UIAlertController(title: "Delete Confirmation", message: "Do you want to delete all user data?", preferredStyle: .alert)
 
         // Full delete action
-        let deleteAllAction = UIAlertAction(title: "Delete All Data", style: .destructive) { _ in
-            self.deleteAllData()
+        let deleteAllAction = UIAlertAction(title: "Delete All Data", style: .destructive) { [weak self] _ in
+            self?.deleteAllData()
+
+            // Show success message after deletion
+            let successAlert = UIAlertController(title: "Success", message: "All user data deleted successfully.", preferredStyle: .alert)
+            successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                // Optionally, navigate back or update UI
+                self?.navigationController?.popViewController(animated: true)
+            }))
+            self?.present(successAlert, animated: true, completion: nil)
         }
 
-        // Add action to the alert controller
+        // Add delete action to the alert controller
         alertController.addAction(deleteAllAction)
 
         // Add a cancel action
@@ -94,6 +102,7 @@ class HomeViewController: UIViewController {
         // Present the alert controller
         present(alertController, animated: true, completion: nil)
     }
+
 
     // Function to delete all user data
     private func deleteAllData() {
