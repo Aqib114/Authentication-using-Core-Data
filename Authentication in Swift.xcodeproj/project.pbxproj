@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3149CF062C9D9E16009A5107 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */; };
 		31749A9C2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31749A9A2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld */; };
 		31D212DD2CA13A1B00D9F301 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D212DB2CA13A1B00D9F301 /* EditViewController.swift */; };
 		31D212DE2CA13A1B00D9F301 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D212DC2CA13A1B00D9F301 /* EditViewController.xib */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		0F2523484A27849F3F86738E /* Pods-Authentication in Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication in Swift.release.xcconfig"; path = "Target Support Files/Pods-Authentication in Swift/Pods-Authentication in Swift.release.xcconfig"; sourceTree = "<group>"; };
-		3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		31749A9B2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Authentication_in_Swift.xcdatamodel; sourceTree = "<group>"; };
 		31D212DB2CA13A1B00D9F301 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		31D212DC2CA13A1B00D9F301 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
@@ -94,14 +92,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3149CF042C9D9DFB009A5107 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				3149CF052C9D9E16009A5107 /* UIImage+Ext.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		31D212DA2CA139DF00D9F301 /* EditViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				31749A9A2C9D4C5B00FC7C07 /* Authentication_in_Swift.xcdatamodeld */,
-				3149CF042C9D9DFB009A5107 /* Extensions */,
 				BA6F20022C93F83F0071DF0D /* Authentication in Swift */,
 				BA6F20012C93F83F0071DF0D /* Products */,
 				FAFBF59B99AF275CCD66950D /* Pods */,
@@ -434,7 +423,6 @@
 				31D212DD2CA13A1B00D9F301 /* EditViewController.swift in Sources */,
 				BAFF13862C9BE111008D838B /* PersistenceService.swift in Sources */,
 				BADD9B3E2C94437B00B4C69F /* SignUpViewModel.swift in Sources */,
-				3149CF062C9D9E16009A5107 /* UIImage+Ext.swift in Sources */,
 				BAFF13902C9BE12D008D838B /* HomeViewModel.swift in Sources */,
 				BAFF13912C9BE12D008D838B /* LoginViewModel.swift in Sources */,
 				BAFF138B2C9BE11F008D838B /* HomeViewController.swift in Sources */,

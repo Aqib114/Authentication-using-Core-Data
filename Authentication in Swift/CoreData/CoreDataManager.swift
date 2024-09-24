@@ -54,7 +54,6 @@ class CoreDataManager {
     
     // Function to save user profile image
     func saveUserProfileImage(_ imageData: Data, forEmail email: String) {
-        // Fetch the user from Core Data
         if let user = fetchUser(byEmail: email) {
             user.profileimage = imageData
             do {
@@ -65,6 +64,53 @@ class CoreDataManager {
             }
         } else {
             print("User not found with email: \(email)")
+        }
+    }
+    
+    // MARK: - Session Management
+
+    // Function to create a new session
+    func createSession(for userId: UUID, deviceId: String) {
+        let session = Session(context: context)
+        session.deviceId = deviceId
+        session.isLoggedIn = true
+        session.loginTimestamp = Date()
+//        session.userId = userId
+        
+        do {
+            try context.save()
+            print("Session created successfully!")
+        } catch {
+            print("Failed to create session: \(error)")
+        }
+    }
+
+    // Function to fetch the active session
+    func fetchActiveSession() -> Session? {
+        let fetchRequest: NSFetchRequest<Session> = Session.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "isLoggedIn == %@", NSNumber(value: true))
+        
+        do {
+            let sessions = try context.fetch(fetchRequest)
+            return sessions.first // Return the first active session
+        } catch {
+            print("Failed to fetch active session: \(error)")
+            return nil
+        }
+    }
+
+    // Function to end a session
+    func endSession() {
+        if let activeSession = fetchActiveSession() {
+            activeSession.isLoggedIn = false
+            do {
+                try context.save()
+                print("Session ended successfully!")
+            } catch {
+                print("Failed to end session: \(error)")
+            }
+        } else {
+            print("No active session found.")
         }
     }
 }

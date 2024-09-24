@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         setupTextFieldImages()
         setupTextFieldTargets()
         setupDismissKeyboardGesture()
-
     }
 
     // Function to set up the layout for text fields
@@ -107,7 +106,7 @@ class LoginViewController: UIViewController {
         textField.leftView = containerView
         textField.leftViewMode = .always
     }
-
+    
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         guard let email = emailTextField.text, !email.isEmpty,
               let password = passwordTextField.text, !password.isEmpty else {
@@ -126,39 +125,33 @@ class LoginViewController: UIViewController {
             }
             return
         }
-
+        
         if isValidEmail(email) && isValidPassword(password) {
-                // Check if user exists in Core Data
-                if let savedUser = fetchUserFromCoreData(email: email) {
-                    // Validate the password
-                    if savedUser.password == password {
-                        print("User found: \(savedUser)")
-                        
-                        // Initialize the HomeViewController
-                        let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                        homeScreenController.userName = savedUser.name ?? "User"
-                        homeScreenController.userCity = savedUser.city ?? "Unknown City"
-                        homeScreenController.userEmail = savedUser.email ?? "Unknown Email"
+            if let savedUser = CoreDataManager.shared.fetchUser(byEmail: email) {
+                // Validate password
+                if savedUser.password == password {
+                    print("User found: \(savedUser)")
+                    
+                    // Save login state and user details
+                    UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                    UserDefaults.standard.set(savedUser.email, forKey: "userEmail")
+                    UserDefaults.standard.set(savedUser.name, forKey: "userName")
+                    UserDefaults.standard.set(savedUser.city, forKey: "userCity")
+                    
+                    // If profile image is stored as Data, save it to UserDefaults
+                    if let imageData = savedUser.profileimage {
+                        UserDefaults.standard.set(imageData, forKey: "userProfileImage")
+                    }
+                    UserDefaults.standard.synchronize() // Optionally synchronize
 
-                        // Fetch the profile image, if available
-                        if let imageData = savedUser.profileimage {
-                            print("Image data found, size: \(imageData.count) bytes")
-                            
-                            // Attempt to create an image from the data
-                            if let image = UIImage(data: imageData) {
-                                print("Image successfully created from data.")
-                                homeScreenController.userImage = image
-                            } else {
-                                print("Failed to create image from data.")
-                            }
-                        } else {
-                            print("No image data found.")
-                            homeScreenController.userImage = UIImage(systemName: "pencil") // Use a placeholder if no image is available
-                        }
-
-                    let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-                    navigationItem.backBarButtonItem = backBarButton
-                    navigationController?.navigationBar.tintColor = .black
+                    // Initialize HomeViewController
+                    let homeScreenController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+                    // Pass user details
+                    homeScreenController.userName = savedUser.name
+                    homeScreenController.userCity = savedUser.city
+                    homeScreenController.userEmail = savedUser.email
+                    homeScreenController.userImage = UIImage(data: savedUser.profileimage ?? Data())
+                    
                     navigationController?.pushViewController(homeScreenController, animated: true)
                 } else {
                     showAlert(message: "Password didn't match. Please try again.")
@@ -171,20 +164,6 @@ class LoginViewController: UIViewController {
         }
     }
 
-    func fetchUserFromCoreData(email: String) -> Users? {
-        let context = PersistenceService.context
-        let fetchRequest: NSFetchRequest<Users> = Users.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "email == %@", email)
-        
-        do {
-            let users = try context.fetch(fetchRequest)
-            return users.first
-        } catch {
-            print("Failed to fetch user: \(error)")
-            return nil
-        }
-    }
-    
     func setupDismissKeyboardGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
@@ -195,7 +174,7 @@ class LoginViewController: UIViewController {
     }
 
     @objc func createAccountTapped() {
-   let signupViewController = SignUpVC.loadFromNib()
+        let signupViewController = SignUpVC.loadFromNib()
         navigationController?.pushViewController(signupViewController, animated: true)
         let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButton
