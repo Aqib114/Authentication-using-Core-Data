@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="Authentication_in_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCreate" destination="ugy-kI-Pf5" id="05N-pU-1yb"/>
+                <outlet property="btnUpload" destination="G9Q-RG-WcI" id="ue5-w8-IbD"/>
+                <outlet property="confirmErrorLbl" destination="GvO-xv-j3L" id="tGh-bU-S3h"/>
+                <outlet property="emailErrorLbl" destination="wE1-ee-XDI" id="4GJ-tL-5Yy"/>
+                <outlet property="nameErrorLbl" destination="fTx-y9-O2h" id="pt3-fb-0zq"/>
+                <outlet property="passErrorLbl" destination="cHP-xw-7TJ" id="KUl-09-bZA"/>
+                <outlet property="profileImage" destination="kCK-QP-Sbm" id="vhi-Wc-L6G"/>
+                <outlet property="txtCity" destination="2vK-Gq-pOO" id="7vb-Cr-dBh"/>
+                <outlet property="txtConfirmPassword" destination="Igx-5E-LWo" id="Qup-NV-6r1"/>
+                <outlet property="txtEmail" destination="iGG-gO-XBB" id="NrY-Oa-tWh"/>
+                <outlet property="txtName" destination="rcG-kR-2QI" id="HWl-ns-twA"/>
+                <outlet property="txtPassword" destination="71Y-hp-5fE" id="Cex-a4-FLn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="7Wg-mw-pYl">
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="119"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kCK-QP-Sbm">
+                    <rect key="frame" x="155" y="162.66666666666666" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2Lb-fj-3ub"/>
+                        <constraint firstAttribute="height" constant="74.666666666666657" id="nRC-Pm-NdY"/>
+                    </constraints>
+                    <imageReference key="image" image="person.circle.fill" catalog="system" symbolScale="large"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-14" translatesAutoresizingMaskIntoConstraints="NO" id="GrO-P7-Hbj" userLabel="textFieldStack">
+                    <rect key="frame" x="45" y="325" width="300" height="308"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcG-kR-2QI">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="46.666666666666664"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fTx-y9-O2h">
+                            <rect key="frame" x="0.0" y="32.666666666666671" width="300" height="46.666666666666671"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iGG-gO-XBB">
+                            <rect key="frame" x="0.0" y="65.333333333333314" width="300" height="46.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wE1-ee-XDI">
+                            <rect key="frame" x="0.0" y="98" width="300" height="46.666666666666657"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71Y-hp-5fE">
+                            <rect key="frame" x="0.0" y="130.66666666666669" width="300" height="46.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cHP-xw-7TJ">
+                            <rect key="frame" x="0.0" y="163.33333333333334" width="300" height="46.666666666666657"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Igx-5E-LWo">
+                            <rect key="frame" x="0.0" y="196" width="300" height="46.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GvO-xv-j3L">
+                            <rect key="frame" x="0.0" y="228.66666666666666" width="300" height="46.666666666666657"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please Select City" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="2vK-Gq-pOO">
+                            <rect key="frame" x="0.0" y="261.33333333333331" width="300" height="46.666666666666686"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugy-kI-Pf5">
+                    <rect key="frame" x="50" y="643" width="290" height="42"/>
+                    <color key="backgroundColor" red="0.64313725490196072" green="0.30196078431372547" blue="0.6470588235294118" alpha="0.8232737155939569" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="lVs-br-Hc4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="25"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Create">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createdUser:" destination="-1" eventType="touchUpInside" id="rx7-c9-tBR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9Q-RG-WcI">
+                    <rect key="frame" x="104" y="250" width="183" height="50"/>
+                    <color key="backgroundColor" red="0.64313725490196072" green="0.30196078431372547" blue="0.6470588235294118" alpha="0.81787857156715649" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ncW-Us-irE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Upload Profile Image">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnUploadClicked:" destination="-1" eventType="touchUpInside" id="f24-3B-F3Y"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Vector 2" translatesAutoresizingMaskIntoConstraints="NO" id="LL2-gl-1R8">
+                    <rect key="frame" x="-18" y="689.66666666666663" width="152" height="162.33333333333337"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yww-fa-qq6">
+                    <rect key="frame" x="84" y="110" width="240" height="36"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G9Q-RG-WcI" secondAttribute="trailing" constant="103" id="0yg-gH-0Rq"/>
+                <constraint firstItem="GrO-P7-Hbj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="2sa-ke-obZ"/>
+                <constraint firstAttribute="bottom" secondItem="LL2-gl-1R8" secondAttribute="bottom" id="76P-q2-9gl"/>
+                <constraint firstItem="LL2-gl-1R8" firstAttribute="top" secondItem="ugy-kI-Pf5" secondAttribute="bottom" constant="4.6699999999999999" id="BFx-gg-lYH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ugy-kI-Pf5" secondAttribute="trailing" constant="50" id="C7I-9u-UOj"/>
+                <constraint firstItem="kCK-QP-Sbm" firstAttribute="top" secondItem="yww-fa-qq6" secondAttribute="bottom" constant="18.999999999999972" id="Dch-9F-a81"/>
+                <constraint firstItem="yww-fa-qq6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="G6S-vJ-Yz4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Wg-mw-pYl" secondAttribute="trailing" constant="202" id="IFm-Sz-nxE"/>
+                <constraint firstItem="G9Q-RG-WcI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="104" id="Pi3-Kc-HDj"/>
+                <constraint firstItem="G9Q-RG-WcI" firstAttribute="top" secondItem="kCK-QP-Sbm" secondAttribute="bottom" constant="10.333333333333343" id="S9E-u7-FeA"/>
+                <constraint firstItem="ugy-kI-Pf5" firstAttribute="top" secondItem="GrO-P7-Hbj" secondAttribute="bottom" constant="10" id="WHl-m8-YtK"/>
+                <constraint firstItem="7Wg-mw-pYl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZDg-t8-quC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LL2-gl-1R8" secondAttribute="trailing" constant="256" id="ead-H1-JPR"/>
+                <constraint firstItem="yww-fa-qq6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="84" id="hUM-8r-kQi"/>
+                <constraint firstItem="LL2-gl-1R8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-18" id="kod-Aa-UMa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GrO-P7-Hbj" secondAttribute="trailing" constant="40" id="mq5-lU-aTi"/>
+                <constraint firstItem="GrO-P7-Hbj" firstAttribute="top" secondItem="G9Q-RG-WcI" secondAttribute="bottom" constant="25" id="nKB-Zr-A0v"/>
+                <constraint firstItem="ugy-kI-Pf5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="rTw-Fr-WRs"/>
+                <constraint firstItem="kCK-QP-Sbm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sTB-SW-h40"/>
+                <constraint firstItem="7Wg-mw-pYl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="thl-MG-08K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yww-fa-qq6" secondAttribute="trailing" constant="66" id="ufo-KJ-Jfp"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Vector 1" width="188" height="119"/>
+        <image name="Vector 2" width="140" height="220"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
