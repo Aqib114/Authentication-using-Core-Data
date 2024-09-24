@@ -15,7 +15,18 @@ class HomeViewController: UIViewController {
 
     
     override func viewDidLoad() {
-            super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
+        super.viewDidLoad()
+        setUserDetails()
+    }
+
+    // MARK: - UI Setup
+    func setUserDetails() {
+        userNameLabel.text = userName ?? "Unknown"
+        userEmailLabel.text = userEmail ?? "Unknown"
+        userCityLabel.text = userCity ?? "Unknown"
+        userProfileImageView.image = userImage ?? UIImage(named: "placeholder-image")
+    }
 
             // Show user details
             if let name = userName {

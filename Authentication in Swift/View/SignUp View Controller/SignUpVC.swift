@@ -35,6 +35,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
     
     // MARK: - UI Setup
     func setupUI() {
+        self.navigationController?.navigationBar.isHidden = true
         customizeTextFields(txtName, icon: UIImage(systemName: "person.crop.circle.fill"))
         customizeTextFields(txtEmail, icon: UIImage(systemName: "envelope.fill"))
         customizeTextFields(txtPassword, icon: UIImage(systemName: "lock.fill"))
