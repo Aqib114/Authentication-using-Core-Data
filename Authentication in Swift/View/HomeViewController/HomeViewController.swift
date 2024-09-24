@@ -32,6 +32,10 @@ class HomeViewController: UIViewController {
         fetchUpdatedUserDetails() // Fetch updated user details
     }
 
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+           logoutUser()
+       }
+    
     // MARK: - Fetch User Details
     private func fetchUpdatedUserDetails() {
         guard let email = userEmail else { return }
@@ -123,4 +127,21 @@ class HomeViewController: UIViewController {
             print("Failed to delete user: \(error)")
         }
     }
+    
+    
+    func logoutUser() {
+        // Clear login state
+        UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        UserDefaults.standard.removeObject(forKey: "userEmail")
+        UserDefaults.standard.removeObject(forKey: "userName")
+        UserDefaults.standard.removeObject(forKey: "userCity")
+        UserDefaults.standard.removeObject(forKey: "userProfileImage")
+        
+        // Navigate back to the Login screen
+        let loginController = LoginViewController.loadFromNib()
+        if let navController = navigationController {
+            navController.setViewControllers([loginController], animated: true)
+        }
+    }
+
 }

@@ -157,12 +157,35 @@
                         <constraint firstAttribute="height" constant="40" id="54F-1g-Ihw"/>
                     </constraints>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjb-G7-6z5">
+                    <rect key="frame" x="30" y="754" width="333" height="36"/>
+                    <color key="backgroundColor" red="0.64313725489999995" green="0.30196078430000001" blue="0.64705882349999999" alpha="0.81963878909999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="logout"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="logoutButtonTapped:" destination="-1" eventType="touchUpInside" id="TzQ-KT-zps"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="i16-7a-IRa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8DZ-RN-Iod"/>
                 <constraint firstItem="eQz-12-OBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="BES-GM-dMc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zjb-G7-6z5" secondAttribute="trailing" constant="30" id="Bet-32-w4q">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i16-7a-IRa" secondAttribute="trailing" id="Dkx-Y1-CG4"/>
                 <constraint firstItem="o7T-G3-3BN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="ENv-4Q-xfi"/>
                 <constraint firstItem="VGZ-HS-FIl" firstAttribute="top" secondItem="i16-7a-IRa" secondAttribute="bottom" constant="53" id="G9G-Kg-jFh"/>
@@ -170,10 +193,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o7T-G3-3BN" secondAttribute="trailing" constant="10" id="JWX-v8-elF"/>
                 <constraint firstItem="o7T-G3-3BN" firstAttribute="top" secondItem="X6C-G1-Q4M" secondAttribute="bottom" constant="25" id="K21-wX-gMu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XR6-2O-z9a" secondAttribute="trailing" constant="80.329999999999998" id="LrX-Hj-hTy"/>
+                <constraint firstItem="zjb-G7-6z5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Mfh-Hu-gbv"/>
                 <constraint firstItem="i16-7a-IRa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mrj-dQ-b7A"/>
                 <constraint firstItem="eQz-12-OBa" firstAttribute="top" secondItem="VGZ-HS-FIl" secondAttribute="bottom" constant="27" id="Nzi-o1-Ofi"/>
                 <constraint firstItem="X6C-G1-Q4M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tti-Ed-pw9"/>
                 <constraint firstItem="XR6-2O-z9a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="X0F-K9-cZJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zjb-G7-6z5" secondAttribute="bottom" constant="28" id="aro-ZB-bRl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XR6-2O-z9a" secondAttribute="bottom" constant="100.67" id="dF1-Ar-Ps7"/>
                 <constraint firstItem="VGZ-HS-FIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="fAB-Hw-9cZ"/>
                 <constraint firstItem="XR6-2O-z9a" firstAttribute="top" secondItem="o7T-G3-3BN" secondAttribute="bottom" constant="64.000000000000114" id="hKK-Si-JEe"/>

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Authentication in Swift
-//
-//  Created by Mapple.pk on 13/09/2024.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -18,6 +11,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
+        
+        // Retrieve the login state from UserDefaults
+           let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+
+           // Determine the initial view controller
+           let initialViewController: UIViewController
+           if isLoggedIn {
+               // If logged in, navigate to HomeViewController
+               let homeController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+               // You can optionally set user details here if needed
+               initialViewController = homeController
+           } else {
+               // If not logged in, navigate to LoginViewController
+               initialViewController = LoginViewController.loadFromNib()
+           }
+        
         let nav = UINavigationController()
         let mainView = LoginViewController.loadFromNib()
         nav.pushViewController(mainView, animated: true)
@@ -35,8 +44,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        if UserDefaults.standard.bool(forKey: "isLoggedIn") {
+            let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            homeVC.userEmail = UserDefaults.standard.string(forKey: "userEmail")
+            homeVC.userName = UserDefaults.standard.string(forKey: "userName")
+            homeVC.userCity = UserDefaults.standard.string(forKey: "userCity")
+            
+            if let imageData = UserDefaults.standard.data(forKey: "userProfileImage") {
+                homeVC.userImage = UIImage(data: imageData)
+            } else {
+                homeVC.userImage = UIImage(named: "placeholder-image")
+            }
+
+            // Present the HomeViewController
+            let navigationController = UINavigationController(rootViewController: homeVC)
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+        }
     }
 
+    
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
